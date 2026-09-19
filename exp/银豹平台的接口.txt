@@ -20,7 +20,7 @@ Accept-Encoding: gzip, deflate, br, zstd
 Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
 Cookie: loginVersionStrForPospal=4255269; POSPAL_REPORT_SDK=v1.0.124; browserUuidForPospal=cfdc6490-e532-43c5-b48d-33261070ece8; Hm_lvt_8a95882b0d389ebcc438a9230527ddf5=1789816110; HMACCOUNT=AD1E0835C192F2D5; storeIndustryForPospal=101; lastLoginAccount=18203659569; daysLimitForPospal=; ceMenuMode=1; rightPannelCDPAdvert=; sessionGuid=cfdc3c61-de24-4f68-8f01-642cb133d2c4; kefuOnlineTimesForPospal=%7B%22startTime%22%3A%2200%3A00%22%2C%22endTime%22%3A%2223%3A00%22%2C%22insertTimeStamp%22%3A1789819332483%7D; Hm_lpvt_8a95882b0d389ebcc438a9230527ddf5=1789819403
 
-userName=18203659569&password=571217&returnUrl=&screenSize=1470*923
+userName=&password=&returnUrl=&screenSize=1470*923
 
 
 
