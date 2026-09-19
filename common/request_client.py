@@ -14,12 +14,17 @@ class RequestClient:
     def __init__(self, base_url: str, timeout: int = 10):
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
+        self.session = requests.Session()
+        self.session.headers.update({
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+            "X-Requested-With": "XMLHttpRequest",
+        })
 
     def request(self, method: str, path: str, **kwargs):
         url = f"{self.base_url}/{path.lstrip('/')}"
         start = time.perf_counter()
         try:
-            response = requests.request(
+            response = self.session.request(
                 method,
                 url,
                 timeout=self.timeout,
