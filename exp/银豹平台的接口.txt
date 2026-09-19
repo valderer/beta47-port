@@ -1,0 +1,191 @@
+登陆：
+
+POST https://beta47.pospal.cn/account/SignIn?noLog= HTTP/1.1
+Host: beta47.pospal.cn
+Connection: keep-alive
+Content-Length: 67
+sec-ch-ua-platform: "Windows"
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+Accept: application/json, text/javascript, */*; q=0.01
+sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+sec-ch-ua-mobile: ?0
+Origin: https://beta47.pospal.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://beta47.pospal.cn/account/signin
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: loginVersionStrForPospal=4255269; POSPAL_REPORT_SDK=v1.0.124; browserUuidForPospal=cfdc6490-e532-43c5-b48d-33261070ece8; Hm_lvt_8a95882b0d389ebcc438a9230527ddf5=1789816110; HMACCOUNT=AD1E0835C192F2D5; storeIndustryForPospal=101; lastLoginAccount=18203659569; daysLimitForPospal=; ceMenuMode=1; rightPannelCDPAdvert=; sessionGuid=cfdc3c61-de24-4f68-8f01-642cb133d2c4; kefuOnlineTimesForPospal=%7B%22startTime%22%3A%2200%3A00%22%2C%22endTime%22%3A%2223%3A00%22%2C%22insertTimeStamp%22%3A1789819332483%7D; Hm_lpvt_8a95882b0d389ebcc438a9230527ddf5=1789819403
+
+userName=18203659569&password=571217&returnUrl=&screenSize=1470*923
+
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Sat, 19 Sep 2026 12:03:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 73
+Connection: keep-alive
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Set-Cookie: .POSPALAUTH30220=; domain=.pospal.cn; expires=Mon, 11-Oct-1999 16:00:00 GMT; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: .POSPALAUTH30220=5F4D1E4D1CC63AFB74D1E4CF6A63FFEAA3142D900A2BFB78B1C29FCFD3442F1B21D6440BB553F019E068D5F704815CCD635AE52A7E25D1A36D814624F15174E62B3A523EDEECBC3F5B86A3B222771AC6A0CB5FC0E4C880110F467C5F0A172E7197EA635F669B81195229809459DE9215F379A94306E1BC7300404E9ED1A5D3D5EE1E6E1AD89D12A4F85567599DD3DF4B; domain=.pospal.cn; path=/; HttpOnly; SameSite=Lax
+Set-Cookie: sessionGuid=8e33e0d3-95cb-4a71-9d54-dc8649533846; path=/
+Set-Cookie: storeIndustryForPospal=101; path=/
+Set-Cookie: lastLoginAccount=18203659569; domain=.pospal.cn; expires=Thu, 19-Sep-2126 12:03:29 GMT; path=/; secure
+Set-Cookie: daysLimitForPospal=; expires=Thu, 19-Sep-2126 12:03:29 GMT; path=/
+Set-Cookie: ceMenuMode=1; domain=.pospal.cn; expires=Thu, 19-Sep-2126 12:03:29 GMT; path=/
+
+{"successed":true,"msg":"https://beta47.pospal.cn/Home?fromSource=login"}
+
+
+新建商品
+POST https://beta47.pospal.cn/Product/SaveProduct HTTP/1.1
+Host: beta47.pospal.cn
+Connection: keep-alive
+Content-Length: 1205
+sec-ch-ua-platform: "Windows"
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+Accept: application/json, text/javascript, */*; q=0.01
+sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+sec-ch-ua-mobile: ?0
+Origin: https://beta47.pospal.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://beta47.pospal.cn/ProductInfo/Retail?userId=6132502
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: pageOpenCount=3; loginVersionStrForPospal=4255269; POSPAL_REPORT_SDK=v1.0.124; browserUuidForPospal=cfdc6490-e532-43c5-b48d-33261070ece8; Hm_lvt_8a95882b0d389ebcc438a9230527ddf5=1789816110; HMACCOUNT=AD1E0835C192F2D5; storeIndustryForPospal=101; lastLoginAccount=18203659569; daysLimitForPospal=; ceMenuMode=1; rightPannelCDPAdvert=; kefuOnlineTimesForPospal=%7B%22startTime%22%3A%2200%3A00%22%2C%22endTime%22%3A%2223%3A00%22%2C%22insertTimeStamp%22%3A1789819332483%7D; .POSPALAUTH30220=5F4D1E4D1CC63AFB74D1E4CF6A63FFEAA3142D900A2BFB78B1C29FCFD3442F1B21D6440BB553F019E068D5F704815CCD635AE52A7E25D1A36D814624F15174E62B3A523EDEECBC3F5B86A3B222771AC6A0CB5FC0E4C880110F467C5F0A172E7197EA635F669B81195229809459DE9215F379A94306E1BC7300404E9ED1A5D3D5EE1E6E1AD89D12A4F85567599DD3DF4B; sessionGuid=8e33e0d3-95cb-4a71-9d54-dc8649533846; Hm_lpvt_8a95882b0d389ebcc438a9230527ddf5=1789819483
+
+productJson=%7B%22id%22%3A%220%22%2C%22enable%22%3A%221%22%2C%22userId%22%3A%226132502%22%2C%22barcode%22%3A%222609192004445%22%2C%22name%22%3A%22%E8%93%9D%E8%89%B2T%E6%81%A4%22%2C%22categoryUid%22%3A%221789815840333633875%22%2C%22categoryName%22%3A%22%E5%A4%8F%E8%A3%85%22%2C%22sellPrice%22%3A%22109%22%2C%22buyPrice%22%3A%2270%22%2C%22isCustomerDiscount%22%3A%221%22%2C%22customerPrice%22%3A%22%22%2C%22sellPrice2%22%3A%22%22%2C%22pinyin%22%3A%22lsTx%22%2C%22attribute6%22%3A%22%22%2C%22supplierUid%22%3Anull%2C%22supplierName%22%3A%22%E6%97%A0%22%2C%22supplierRangeList%22%3A%5B%5D%2C%22productionDate%22%3A%22%22%2C%22shelfLife%22%3A%22%22%2C%22maxStock%22%3A%22%22%2C%22minStock%22%3A%22%22%2C%22description%22%3A%22%22%2C%22noStock%22%3A0%2C%22stock%22%3A%22105%22%2C%22isGift%22%3A0%2C%22isPoint%22%3A1%2C%22attribute1%22%3A%22%22%2C%22attribute2%22%3A%22%22%2C%22attribute3%22%3A%22%22%2C%22attribute4%22%3A%22%22%2C%22productCommonAttribute%22%3Anull%2C%22baseUnitName%22%3A%22%E6%97%A0%22%2C%22productUnitExchangeList%22%3A%5B%5D%2C%22customerPrices%22%3A%5B%5D%2C%22UpdateProductImages%22%3Atrue%2C%22productimages%22%3A%5B%5D%2C%22productTags%22%3A%5B%5D%2C%22productExtBarcodes%22%3A%5B%5D%7D
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Sat, 19 Sep 2026 12:05:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 122
+Connection: keep-alive
+Cache-Control: private, s-maxage=0
+Vary: Accept-Encoding
+
+{"successed":true,"syncStores":[],"productName":"蓝色T恤","productUid":"1025959736928703106","hasEditProductAuth":true}
+
+
+查询商品列表
+POST https://beta47.pospal.cn/Product/LoadProductsByPage HTTP/1.1
+Host: beta47.pospal.cn
+Connection: keep-alive
+Content-Length: 184
+sec-ch-ua-platform: "Windows"
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+Accept: application/json, text/javascript, */*; q=0.01
+sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+sec-ch-ua-mobile: ?0
+Origin: https://beta47.pospal.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://beta47.pospal.cn/Product/Manage
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: pageOpenCount=8; loginVersionStrForPospal=4255269; POSPAL_REPORT_SDK=v1.0.124; browserUuidForPospal=cfdc6490-e532-43c5-b48d-33261070ece8; Hm_lvt_8a95882b0d389ebcc438a9230527ddf5=1789816110; HMACCOUNT=AD1E0835C192F2D5; storeIndustryForPospal=101; lastLoginAccount=18203659569; daysLimitForPospal=; ceMenuMode=1; rightPannelCDPAdvert=; .POSPALAUTH30220=5F4D1E4D1CC63AFB74D1E4CF6A63FFEAA3142D900A2BFB78B1C29FCFD3442F1B21D6440BB553F019E068D5F704815CCD635AE52A7E25D1A36D814624F15174E62B3A523EDEECBC3F5B86A3B222771AC6A0CB5FC0E4C880110F467C5F0A172E7197EA635F669B81195229809459DE9215F379A94306E1BC7300404E9ED1A5D3D5EE1E6E1AD89D12A4F85567599DD3DF4B; sessionGuid=8e33e0d3-95cb-4a71-9d54-dc8649533846; kefuOnlineTimesForPospal=%7B%22startTime%22%3A%2200%3A00%22%2C%22endTime%22%3A%2223%3A00%22%2C%22insertTimeStamp%22%3A1789819693285%7D; Hm_lpvt_8a95882b0d389ebcc438a9230527ddf5=1789819722
+
+groupBySpu=false&userId=6132502&productbrand=&categorysJson=%5B%5D&enable=1&supplierUid=&productTagUidsJson=%5B%5D&keyword=&categoryType=&pageIndex=1&pageSize=50&orderColumn=&asc=false
+
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Sat, 19 Sep 2026 12:08:42 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 8833
+Connection: keep-alive
+Cache-Control: private, s-maxage=0
+Vary: Accept-Encoding
+
+{"successed":true,"contentView":"\n\n\n<thead>\n    <tr>\n        <th class=\"tdAlignCenter\" width=\"50\">\n            <img src=\"/images/settingHeader.png\" alt=\"\" class=\"mCS_img_SettingHeader\">\n        </th>\n        <th class=\"tdAlignCenter\" width=\"60\">操作</th>\n            <th class=\"tdAlignCenter\" data=\"productImage\" data-default=\"0\" width=\"50\">图片</th>\n        <th class='thSort Desc' data=\"name\" data-required=\"true\" title=\"点击排序\">\n            商品名称<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n        <th class='thSort Desc' data=\"barcode\" data-required=\"true\" title=\"点击排序\">\n            条码<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n                    <th data=\"attribute4\">货号</th>\n                    <th data=\"extBarcode\" data-default=\"0\">扩展码</th>\n        <th data=\"brandName\" data-default=\"0\">品牌</th>\n        <th data=\"attribute6\">规格</th>\n        <th data=\"pinyin\">拼音码</th>\n        <th data=\"categoryName\">分类</th>\n    <th class='thSort Desc tdAlignRight' data=\"stock\" title=\"点击排序\">\n        库存\n        <img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n    </th>\n                <th data=\"baseUnitName\" class=\"tdAlignCenter\">主单位</th>\n            <th class='thSort Asc tdAlignRight' data=\"buyPrice\" data-required=\"true\" title=\"点击排序\">\n                进货价<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n            </th>\n        <th class='thSort Asc tdAlignRight' data=\"sellPrice\" data-required=\"true\" title=\"点击排序\">\n            销售价<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n            <th class='thSort Asc tdAlignRight' data=\"profitPercent\" data-default=\"0\" title=\"点击排序\">\n                毛利率<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n            </th>\n        <th class='thSort Asc tdAlignRight' data=\"sellPrice2\" title=\"点击排序\">\n            批发价<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n        <th class='thSort Asc tdAlignRight' data=\"customerPrice\" title=\"点击排序\">\n            会员价<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n        <th class='thSort Asc tdAlignRight' data=\"isCustomerDiscount\" title=\"点击排序\">\n            会员折扣<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n            <th class='thSort Asc' data=\"supplierName\" title=\"点击排序\">\n                供货商<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n            </th>\n\n            <th data=\"productionDate\">生产日期</th>\n            <th class='thSort Desc' data=\"shelfLife\" title=\"点击排序\">\n                保质期<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n            </th>\n\n        <th class='thSort Desc' data=\"createdDatetime\" title=\"点击排序\">\n            创建日期<img src=\"/images/thempty.gif\" alt=\"\" class=\"mCS_img_loaded\">\n        </th>\n                    <th data=\"attribute1\">自定义1</th>\n                    <th data=\"attribute2\">自定义2</th>\n                    <th data=\"attribute3\">自定义3</th>\n    </tr>\n\n</thead>\n<tbody>\n\n\n            <tr data=\"1162940803\" data-uid=\"1025959736928703106\" data-spu=\"\">\n                <td class=\"tdAlignCenter\">1</td>\n                <td class=\"tdAlignCenter\">\n                    <a data-editable=\"1\" class=\"operation2 btnShowEditArea\">编辑</a>\n                </td>\n                        <td class=\"productImage tdAlignCenter noData\">\n                            <img src=\"https://img.pospal.cn/productImages/0/default_200x200.png\" />\n                        </td>\n                <td style=\"white-space: pre;\">蓝色T恤</td>\n                <td>2609192004445</td>\n                                    <td>\n-                    </td>\n                                    <td class=\"tdAlignCenter\">-</td>\n                <td>-</td>\n                    <td>-</td>\n\n\n                <td>lsTx</td>\n                <td>夏装</td>\n                <td class=\"tdAlignRight\">\n105                </td>\n                <td class=\"tdAlignCenter\">\n无                </td>\n                    <td class=\"tdAlignRight\">70</td>\n                <td class=\"tdAlignRight\">109.00</td>\n                    <td class=\"tdAlignRight\">35.78%</td>\n                <td class=\"tdAlignRight\">109.00</td>\n                <td class=\"tdAlignRight\">\n                        -\n                </td>\n                <td class=\"tdAlignCenter\">是</td>\n                    <td>\n无                    </td>\n\n                    <td class=\"tdAlignCenter\">-</td>\n                    <td class=\"tdAlignRight\">-</td>\n\n                <td class=\"tdAlignCenter\">2026-09-19</td>\n                            <td>-</td>\n                            <td>-</td>\n                            <td>-</td>\n            </tr>\n            <tr data=\"1162939875\" data-uid=\"998536176476344398\" data-spu=\"\">\n                <td class=\"tdAlignCenter\">2</td>\n                <td class=\"tdAlignCenter\">\n                    <a data-editable=\"1\" class=\"operation2 btnShowEditArea\">编辑</a>\n                </td>\n                        <td class=\"productImage tdAlignCenter noData\">\n                            <img src=\"https://img.pospal.cn/productImages/0/default_200x200.png\" />\n                        </td>\n                <td style=\"white-space: pre;\">短裤</td>\n                <td>2609191909291</td>\n                                    <td>\n-                    </td>\n                                    <td class=\"tdAlignCenter\">-</td>\n                <td>-</td>\n                    <td>-</td>\n\n\n                <td>duank</td>\n                <td>夏装</td>\n                <td class=\"tdAlignRight\">\n85                </td>\n                <td class=\"tdAlignCenter\">\n无                </td>\n                    <td class=\"tdAlignRight\">60</td>\n                <td class=\"tdAlignRight\">109.00</td>\n                    <td class=\"tdAlignRight\">44.95%</td>\n                <td class=\"tdAlignRight\">109.00</td>\n                <td class=\"tdAlignRight\">\n                        -\n                </td>\n                <td class=\"tdAlignCenter\">是</td>\n                    <td>\n无                    </td>\n\n                    <td class=\"tdAlignCenter\">-</td>\n                    <td class=\"tdAlignRight\">-</td>\n\n                <td class=\"tdAlignCenter\">2026-09-19</td>\n                            <td>-</td>\n                            <td>-</td>\n                            <td>-</td>\n            </tr>\n            <tr data=\"1162939853\" data-uid=\"239115820889723534\" data-spu=\"\">\n                <td class=\"tdAlignCenter\">3</td>\n                <td class=\"tdAlignCenter\">\n                    <a data-editable=\"1\" class=\"operation2 btnShowEditArea\">编辑</a>\n                </td>\n                        <td class=\"productImage tdAlignCenter noData\">\n                            <img src=\"https://img.pospal.cn/productImages/0/default_200x200.png\" />\n                        </td>\n                <td style=\"white-space: pre;\">短袖</td>\n                <td>2609191907457</td>\n                                    <td>\n-                    </td>\n                                    <td class=\"tdAlignCenter\">-</td>\n                <td>-</td>\n                    <td>-</td>\n\n\n                <td>dx</td>\n                <td>夏装</td>\n                <td class=\"tdAlignRight\">\n100                </td>\n                <td class=\"tdAlignCenter\">\n无                </td>\n                    <td class=\"tdAlignRight\">50</td>\n                <td class=\"tdAlignRight\">99.00</td>\n                    <td class=\"tdAlignRight\">49.49%</td>\n                <td class=\"tdAlignRight\">99.00</td>\n                <td class=\"tdAlignRight\">\n                        -\n                </td>\n                <td class=\"tdAlignCenter\">是</td>\n                    <td>\n无                    </td>\n\n                    <td class=\"tdAlignCenter\">-</td>\n                    <td class=\"tdAlignRight\">-</td>\n\n                <td class=\"tdAlignCenter\">2026-09-19</td>\n                            <td>-</td>\n                            <td>-</td>\n                            <td>-</td>\n            </tr>\n</tbody>\n\n"}
+
+
+
+删除商品
+POST https://beta47.pospal.cn/Product/DeleteProduct HTTP/1.1
+Host: beta47.pospal.cn
+Connection: keep-alive
+Content-Length: 39
+sec-ch-ua-platform: "Windows"
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+Accept: application/json, text/javascript, */*; q=0.01
+sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+sec-ch-ua-mobile: ?0
+Origin: https://beta47.pospal.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://beta47.pospal.cn/ProductInfo/Retail?productId=1162939875
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: pageOpenCount=9; loginVersionStrForPospal=4255269; POSPAL_REPORT_SDK=v1.0.124; browserUuidForPospal=cfdc6490-e532-43c5-b48d-33261070ece8; Hm_lvt_8a95882b0d389ebcc438a9230527ddf5=1789816110; HMACCOUNT=AD1E0835C192F2D5; storeIndustryForPospal=101; lastLoginAccount=18203659569; daysLimitForPospal=; ceMenuMode=1; rightPannelCDPAdvert=; .POSPALAUTH30220=5F4D1E4D1CC63AFB74D1E4CF6A63FFEAA3142D900A2BFB78B1C29FCFD3442F1B21D6440BB553F019E068D5F704815CCD635AE52A7E25D1A36D814624F15174E62B3A523EDEECBC3F5B86A3B222771AC6A0CB5FC0E4C880110F467C5F0A172E7197EA635F669B81195229809459DE9215F379A94306E1BC7300404E9ED1A5D3D5EE1E6E1AD89D12A4F85567599DD3DF4B; sessionGuid=8e33e0d3-95cb-4a71-9d54-dc8649533846; Hm_lpvt_8a95882b0d389ebcc438a9230527ddf5=1789820112; kefuOnlineTimesForPospal=%7B%22startTime%22%3A%2200%3A00%22%2C%22endTime%22%3A%2223%3A00%22%2C%22insertTimeStamp%22%3A1789820111719%7D
+
+productId=1162939875&getSyncStores=true
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Sat, 19 Sep 2026 12:15:25 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 60
+Connection: keep-alive
+Cache-Control: private, s-maxage=0
+Vary: Accept-Encoding
+
+{"successed":true,"syncStores":[],"barcode":"2609191909291"}
+
+
+修改商品
+POST https://beta47.pospal.cn/Product/SaveProduct HTTP/1.1
+Host: beta47.pospal.cn
+Connection: keep-alive
+Content-Length: 1206
+sec-ch-ua-platform: "Windows"
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+Accept: application/json, text/javascript, */*; q=0.01
+sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+sec-ch-ua-mobile: ?0
+Origin: https://beta47.pospal.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://beta47.pospal.cn/ProductInfo/Retail?productId=1162939853
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: pageOpenCount=11; loginVersionStrForPospal=4255269; POSPAL_REPORT_SDK=v1.0.124; browserUuidForPospal=cfdc6490-e532-43c5-b48d-33261070ece8; Hm_lvt_8a95882b0d389ebcc438a9230527ddf5=1789816110; HMACCOUNT=AD1E0835C192F2D5; storeIndustryForPospal=101; lastLoginAccount=18203659569; daysLimitForPospal=; ceMenuMode=1; rightPannelCDPAdvert=; .POSPALAUTH30220=5F4D1E4D1CC63AFB74D1E4CF6A63FFEAA3142D900A2BFB78B1C29FCFD3442F1B21D6440BB553F019E068D5F704815CCD635AE52A7E25D1A36D814624F15174E62B3A523EDEECBC3F5B86A3B222771AC6A0CB5FC0E4C880110F467C5F0A172E7197EA635F669B81195229809459DE9215F379A94306E1BC7300404E9ED1A5D3D5EE1E6E1AD89D12A4F85567599DD3DF4B; sessionGuid=8e33e0d3-95cb-4a71-9d54-dc8649533846; kefuOnlineTimesForPospal=%7B%22startTime%22%3A%2200%3A00%22%2C%22endTime%22%3A%2223%3A00%22%2C%22insertTimeStamp%22%3A1789820111719%7D; Hm_lpvt_8a95882b0d389ebcc438a9230527ddf5=1789820292
+
+productJson=%7B%22id%22%3A%221162939853%22%2C%22enable%22%3A%221%22%2C%22userId%22%3A%226132502%22%2C%22barcode%22%3A%222609191907457%22%2C%22name%22%3A%22%E7%9F%AD%E8%A2%96%22%2C%22categoryUid%22%3A%221789815840333633875%22%2C%22categoryName%22%3A%22%E5%A4%8F%E8%A3%85%22%2C%22sellPrice%22%3A%2299%22%2C%22buyPrice%22%3A%2250%22%2C%22isCustomerDiscount%22%3A%221%22%2C%22customerPrice%22%3A%22%22%2C%22sellPrice2%22%3A%2299%22%2C%22pinyin%22%3A%22dx%22%2C%22attribute6%22%3A%22%22%2C%22supplierUid%22%3Anull%2C%22supplierName%22%3A%22%E6%97%A0%22%2C%22supplierRangeList%22%3A%5B%5D%2C%22productionDate%22%3A%22%22%2C%22shelfLife%22%3A%22%22%2C%22maxStock%22%3A%22%22%2C%22minStock%22%3A%22%22%2C%22description%22%3A%22%22%2C%22noStock%22%3A0%2C%22stock%22%3A%22114514%22%2C%22isGift%22%3A0%2C%22isPoint%22%3A1%2C%22attribute1%22%3A%22%22%2C%22attribute2%22%3A%22%22%2C%22attribute3%22%3A%22%22%2C%22attribute4%22%3A%22%22%2C%22productCommonAttribute%22%3Anull%2C%22baseUnitName%22%3A%22%E6%97%A0%22%2C%22productUnitExchangeList%22%3A%5B%5D%2C%22customerPrices%22%3A%5B%5D%2C%22UpdateProductImages%22%3Atrue%2C%22productimages%22%3A%5B%5D%2C%22productTags%22%3A%5B%5D%2C%22productExtBarcodes%22%3A%5B%5D%7D
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Sat, 19 Sep 2026 12:18:39 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 46
+Connection: keep-alive
+Cache-Control: private, s-maxage=0
+Vary: Accept-Encoding
+
+{"successed":true,"syncStores":[],"stores":[]}
