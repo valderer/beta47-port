@@ -1,4 +1,5 @@
 import json
+import re
 
 
 class PospalProductApi:
@@ -75,3 +76,13 @@ class PospalProductApi:
         if name is not None and str(name) not in html:
             return False
         return True
+
+    @staticmethod
+    def extract_product_id(html, product_uid):
+        """从列表行中提取修改/删除接口使用的内部 productId。"""
+        match = re.search(
+            rf'<tr[^>]*data="([^"]+)"[^>]*data-uid="{re.escape(str(product_uid))}"',
+            html,
+        )
+        assert match, f"列表中未找到 productUid={product_uid} 对应的 productId"
+        return match.group(1)

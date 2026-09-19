@@ -39,6 +39,9 @@ def test_product_crud_flow(
                 barcode=product["barcode"],
                 name=product["name"],
             ), "商品新增后未在列表中查询到"
+            product["id"] = PospalProductApi.extract_product_id(
+                query_data.get("contentView", ""), created_product_id
+            )
 
         with allure.step("修改商品"):
             updated_product = copy.deepcopy(product)
@@ -61,7 +64,7 @@ def test_product_crud_flow(
             ), "商品修改后查询结果不符合预期"
 
         with allure.step("删除商品"):
-            delete_response = pospal_product_api.delete_product(created_product_id)
+            delete_response = pospal_product_api.delete_product(product["id"])
             PospalProductApi.assert_success(delete_response)
 
         with allure.step("删除后查询商品"):
@@ -78,7 +81,7 @@ def test_product_crud_flow(
     finally:
         if created_product_id:
             # 主流程任一步失败时，尽力清理已经创建的测试商品。
-            cleanup_response = pospal_product_api.delete_product(created_product_id)
+            cleanup_response = pospal_product_api.delete_product(product.get("id", created_product_id))
             assert cleanup_response.status_code == 200, (
                 f"测试商品清理失败：product_id={created_product_id}，"
                 f"HTTP {cleanup_response.status_code}"
