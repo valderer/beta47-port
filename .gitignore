@@ -7,3 +7,5 @@ allure-results/
 allure-report/
 *.log
 .env
+.VSCodeCounter/
+exp/银豹平台的接口.txt

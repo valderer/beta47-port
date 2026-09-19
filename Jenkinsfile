@@ -32,13 +32,17 @@ pipeline {
             steps {
                 withCredentials([
                     usernamePassword(
-                        credentialsId: 'req-test-account',
+                        credentialsId: 'pospal-test-account',
                         usernameVariable: 'TEST_USERNAME',
                         passwordVariable: 'TEST_PASSWORD'
                     ),
                     string(
-                        credentialsId: 'req-base-url',
+                        credentialsId: 'pospal-base-url',
                         variable: 'BASE_URL'
+                    ),
+                    string(
+                        credentialsId: 'pospal-user-id',
+                        variable: 'TEST_USER_ID'
                     )
                 ]) {
                     sh '''
